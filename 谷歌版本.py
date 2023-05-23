@@ -6,7 +6,7 @@ from selenium.webdriver.support.ui import Select
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.action_chains import ActionChains
 
-
+#问卷第一题为两选项单选 第二题为两选项多选 第三题为填空
 def scroll(driver, distance):
     js = f"var q=document.documentElement.scrollTop={distance}"
     driver.execute_script(js)
